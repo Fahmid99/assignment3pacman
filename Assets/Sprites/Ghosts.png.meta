@@ -17,6 +17,21 @@ TextureImporter:
   - first:
       213: -1163683877995752105
     second: Ghosts_4
+  - first:
+      213: 3973541203593219680
+    second: Ghosts_5
+  - first:
+      213: -6455640159925716247
+    second: Ghosts_6
+  - first:
+      213: 2055114217772603530
+    second: Ghosts_7
+  - first:
+      213: -5081713406397977757
+    second: Ghosts_8
+  - first:
+      213: 8682066219706375931
+    second: Ghosts_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -105,7 +120,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 75
-        y: 500
+        y: 1300
         width: 250
         height: 225
       alignment: 0
@@ -126,7 +141,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 475
-        y: 500
+        y: 1300
         width: 250
         height: 225
       alignment: 0
@@ -147,7 +162,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 875
-        y: 500
+        y: 1300
         width: 250
         height: 225
       alignment: 0
@@ -168,7 +183,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 75
-        y: 100
+        y: 900
         width: 250
         height: 225
       alignment: 0
@@ -189,7 +204,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 475
-        y: 100
+        y: 900
         width: 250
         height: 225
       alignment: 0
@@ -201,6 +216,111 @@ TextureImporter:
       bones: []
       spriteID: 755d63dada3c9dfe0800000000000000
       internalID: -1163683877995752105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghosts_5
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 900
+        width: 250
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e4d840caad42730800000000000000
+      internalID: 3973541203593219680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghosts_6
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 575
+        width: 188
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eab1ed5a75f866a0800000000000000
+      internalID: -6455640159925716247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghosts_7
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 575
+        width: 187
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88d03b1e7b358c10800000000000000
+      internalID: 2055114217772603530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghosts_8
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 575
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36bee49b4902a79b0800000000000000
+      internalID: -5081713406397977757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghosts_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 175
+        width: 200
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe540e2a35ec7870800000000000000
+      internalID: 8682066219706375931
       vertices: []
       indices: 
       edges: []
