@@ -2,11 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class levelGenerator : MonoBehaviour
-{
+public class LevelGenerator : MonoBehaviour{
+   
+
+   public GameObject Camera; 
+
+    public GameObject Empty;
+    public GameObject OutsideCorner;
+    public GameObject OutsideWall;
+    public GameObject InsideCorner;
+    public GameObject InsideWall;
+    public GameObject SmallPellet;
+    public GameObject BigPellet;
+    public GameObject TJunction;
+
     // Start is called before the first frame update
     void Start()
     {
+
+    
+
+        
         int[,] levelMap =
  {
  {1,2,2,2,2,2,2,2,2,2,2,2,2,7},
@@ -25,6 +41,17 @@ public class levelGenerator : MonoBehaviour
  {2,2,2,2,2,1,5,3,3,0,4,0,0,0},
  {0,0,0,0,0,0,5,0,0,0,4,0,0,0},
  }; 
+  
+  
+  Instantiate(OutsideCorner, new Vector3(-7.0F, -1, 0), Quaternion.identity);
+        for (int i = 0; i < 12; i++) {
+        Instantiate(OutsideWall, new Vector3(i + 0F, 0, 0), Quaternion.identity);
+        } 
+        Instantiate(TJunction, new Vector3(23.5F, -3, 0), Quaternion.identity);
+        for (int i = 0; i < 12; i++) {
+         Instantiate(SmallPellet, new Vector3(i + -6F, -3, 0), Quaternion.identity);
+         
+        } 
 
     }
 
