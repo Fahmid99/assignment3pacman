@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour { 
-public float speed = 0.3f;
-    Vector2 endPoint = Vector2.zero;
 
+    Vector2 endPoint = Vector2.zero;
+    public float pacmanSpeed = 0.3f;
     void Start() {
         endPoint = transform.position;
     }
 
     void FixedUpdate() {
-        
-        Vector2 p = Vector2.MoveTowards(transform.position, endPoint, speed);
+        Vector2 p = Vector2.MoveTowards(transform.position, endPoint, pacmanSpeed);
         GetComponent<Rigidbody2D>().MovePosition(p); 
+         
          if ((Vector2)transform.position == endPoint) {
         if (Input.GetKey(KeyCode.UpArrow) && valid(Vector2.up))
             endPoint = (Vector2)transform.position + Vector2.up;
@@ -23,6 +23,10 @@ public float speed = 0.3f;
             endPoint = (Vector2)transform.position - Vector2.up;
         if (Input.GetKey(KeyCode.LeftArrow) && valid(-Vector2.right))
             endPoint = (Vector2)transform.position - Vector2.right;
+            else 
+            { 
+                
+            }
     }
 
 
