@@ -3,30 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour { 
-public float speed = 0.4f;
-    Vector2 dest = Vector2.zero;
+public float speed = 0.3f;
+    Vector2 endPoint = Vector2.zero;
 
     void Start() {
-        dest = transform.position;
+        endPoint = transform.position;
     }
 
     void FixedUpdate() {
         
-        Vector2 p = Vector2.MoveTowards(transform.position, dest, speed);
+        Vector2 p = Vector2.MoveTowards(transform.position, endPoint, speed);
         GetComponent<Rigidbody2D>().MovePosition(p); 
-         if ((Vector2)transform.position == dest) {
+         if ((Vector2)transform.position == endPoint) {
         if (Input.GetKey(KeyCode.UpArrow) && valid(Vector2.up))
-            dest = (Vector2)transform.position + Vector2.up;
+            endPoint = (Vector2)transform.position + Vector2.up;
         if (Input.GetKey(KeyCode.RightArrow) && valid(Vector2.right))
-            dest = (Vector2)transform.position + Vector2.right;
+            endPoint = (Vector2)transform.position + Vector2.right;
         if (Input.GetKey(KeyCode.DownArrow) && valid(-Vector2.up))
-            dest = (Vector2)transform.position - Vector2.up;
+            endPoint = (Vector2)transform.position - Vector2.up;
         if (Input.GetKey(KeyCode.LeftArrow) && valid(-Vector2.right))
-            dest = (Vector2)transform.position - Vector2.right;
+            endPoint = (Vector2)transform.position - Vector2.right;
     }
 
 
-    Vector2 dir = dest - (Vector2)transform.position;
+    Vector2 dir = endPoint - (Vector2)transform.position;
     GetComponent<Animator>().SetFloat("DirX", dir.x);
     GetComponent<Animator>().SetFloat("DirY", dir.y);
     }
