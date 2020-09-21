@@ -11,7 +11,7 @@ public float speed = 0.4f;
     }
 
     void FixedUpdate() {
-        // Move closer to Destination
+        
         Vector2 p = Vector2.MoveTowards(transform.position, dest, speed);
         GetComponent<Rigidbody2D>().MovePosition(p); 
          if ((Vector2)transform.position == dest) {
@@ -25,14 +25,14 @@ public float speed = 0.4f;
             dest = (Vector2)transform.position - Vector2.right;
     }
 
-    // Animation Parameters
+
     Vector2 dir = dest - (Vector2)transform.position;
     GetComponent<Animator>().SetFloat("DirX", dir.x);
     GetComponent<Animator>().SetFloat("DirY", dir.y);
     }
 
     bool valid(Vector2 dir) {
-        // Cast Line from 'next to Pac-Man' to 'Pac-Man'
+      
         Vector2 pos = transform.position;
         RaycastHit2D hit = Physics2D.Linecast(pos + dir, pos);
         return (hit.collider == GetComponent<Collider2D>());
